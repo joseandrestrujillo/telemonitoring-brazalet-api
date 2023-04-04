@@ -32,10 +32,10 @@ def lambda_handler(event, context):
           "localization_data": {
             "M": {
               "lat": {
-                "S": "37.84494379133754"
+                "S": event['localization_data'][0]
               },
               "long": {
-                "S": "-4.926167521573165"
+                "S": event['localization_data'][1]
               }
             }
           }
