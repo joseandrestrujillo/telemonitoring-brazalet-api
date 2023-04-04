@@ -23,6 +23,9 @@ def lambda_handler(event, context):
           "ueid": {
             "S": ueid
           },
+          "device_id": {
+            "S": event['device_id']
+          },
           "timestamp": {
             "N": timestamp
           },
